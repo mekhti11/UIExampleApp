@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomButton">
+        <attr name="mCornerR" format="enum">
+            <enum name="sm" value="0" />
+            <enum name="md" value="1" />
+            <enum name="lg" value="2" />
+            <enum name="rounded" value="3" />
+        </attr>
+        <attr name="mButtonBackgroundColor" format="color" />
+        <attr name="mPaddingSize" format="enum">
+            <enum name="xs" value="0" />
+            <enum name="sm" value="1" />
+            <enum name="md" value="2" />
+            <enum name="lg" value="3" />
+        </attr>
+        <attr name="mLeftIcon" format="reference" />
+        <attr name="mRightIcon" format="reference" />
+        <attr name="mEnabled" format="boolean" />
+    </declare-styleable>
+</resources>

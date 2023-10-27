@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.mekhti.uiexampleapp.custom.CustomButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:text="Click Me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mButtonBackgroundColor="#FEB914"
+        app:mCornerR="lg"
+        app:mLeftIcon="@drawable/ic_flash"
+        app:mPaddingSize="xs"
+        app:mRightIcon="@drawable/ic_flash" />
+
+    <com.mekhti.uiexampleapp.custom.CustomButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:text="Click Me"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        app:mButtonBackgroundColor="#FEB914"
+        app:mCornerR="lg"
+        app:mLeftIcon="@drawable/ic_flash"
+        app:mPaddingSize="md" />
+
+    <com.mekhti.uiexampleapp.custom.CustomButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:text="Click Me"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:mButtonBackgroundColor="#FEB914"
+        app:mCornerR="md"
+        app:mPaddingSize="sm"
+        app:mRightIcon="@drawable/ic_flash"
+        app:mEnabled="false"/>
+
+    <com.mekhti.uiexampleapp.custom.CustomButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:text="Click Me"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3"
+        app:mButtonBackgroundColor="#FEB914"
+        app:mCornerR="lg"
+        app:mPaddingSize="lg"
+        app:mLeftIcon="@drawable/ic_flash"
+        app:mEnabled="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

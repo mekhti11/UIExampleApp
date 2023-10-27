@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FEB914">
+
+    <ImageView
+        android:id="@+id/iconLeft"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/buttonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/iconRight"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+</LinearLayout>
